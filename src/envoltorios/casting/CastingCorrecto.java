@@ -14,7 +14,7 @@ public class CastingCorrecto {
 		//Casting explícito (correcto)
 		Persona pers2 = new Estudiante(new Persona("María", 25), "5678", 9.0);
 		Estudiante est2 = (Estudiante) pers2;
-		System.out.println("primera persona creada : " + est2.toString());
+		System.out.println("segunda persona creada : " + est2.toString());
 
 	}
 }

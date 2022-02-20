@@ -2,7 +2,7 @@ package envoltorios;
 
 import java.util.Objects;
 
-public class Estudiante extends Persona {
+public class Estudiante extends Persona implements Comparable<Estudiante>{
 	
 	private String matricula;
 	
@@ -56,6 +56,7 @@ public class Estudiante extends Persona {
 		return Objects.equals(matricula, other.matricula) && Objects.equals(notaMedia, other.notaMedia);
 	}
 	
+	@Override
 	public int compareTo(Estudiante e) {
 		if(this.notaMedia > e.notaMedia) {
 			return 1;

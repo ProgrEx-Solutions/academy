@@ -15,7 +15,7 @@ public class UsoEnvoltorios {
 		System.out.println("tercer objeto entero: " + objEntero3.toString());
 		
 		//calculo del máximo
-		Integer[] arrayInts = {objEntero1, objEntero2, objEntero3, 9, -5, 8, -7};
+		Integer[] arrayInts = {objEntero1, objEntero2, objEntero3, 9, -5, 8, -7, 25, -60};
 		visualizaArray(arrayInts);
 		
 		Integer[] maxInfo = maxValueMaxPos(arrayInts);
@@ -49,7 +49,7 @@ public class UsoEnvoltorios {
 		String[] outputs = new String[ints.length];
 		
 		for(int i = 0; i < ints.length; i++) {
-				outputs[i] = leftPadded(Integer.toHexString(ints[i]));
+			outputs[i] = leftPadded(Integer.toHexString(ints[i]));
 		}
 		
 		return outputs; 
